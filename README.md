@@ -1,6 +1,6 @@
     1) Project display
 
-Program simulating a laboratory (the external environment) containing boxes, each containing cheese and at most one mouse.
+Program simulating a dynamic laboratory (the external environment) containing boxes, each containing cheese and at most one mouse.
 The mice and the pieces of cheese belong to a super-class SimulatedEntity (simulated entity), which models them as disks, having a precise position (a vector of two coordinates) that can collide and interact with each other (e.g. a mouse can eat cheese). When the entities die, they disappear from the simulation.
  
 Mice belong to an Animal class, so that we can potentially model other animals. An animal is characterized by: its velocity, its current state (eating, moving, ...), and its organ (here the liver) which plays a fundamental role in the project. It moves randomly around the box and, if it encounters a wall, changes its orientation. If it meets cheese and is hungry, it can eat it by increasing its energy level.
